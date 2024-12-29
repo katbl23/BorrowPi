@@ -1,0 +1,76 @@
+ <!-- Version Final -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Préstamo de Computadores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestión de Préstamo de Computadores</h1>
+
+  <div class="form-container">
+    <label for="computer">Computador:</label>
+    <select id="computer">
+      <!-- Opciones se generarán dinámicamente -->
+    </select>
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" placeholder="Nombre del usuario">
+    
+
+    <label for="propietario">Computador perteneciente:</label>
+    <select id="propietario">
+      <option value="cientifico">Pensamiento Científico</option>
+      <option value="matematico">Pensamiento Matemático</option>
+    </select>
+
+    <label for="ejeprestamo">Eje gestor del préstamo:</label>
+    <select id="ejeprestamo">
+        <option value="cientifico">Pensamiento Científico</option>
+        <option value="matematico">Pensamiento Matemático</option>
+        <option value="lenguaje">Lenguaje</option>
+        <option value="ingles">Inglés</option>
+        <option value="esquemaImagen">Esquema e Imagen</option>
+        <option value="relacionesEntorno">Relaciones con el Entorno</option>
+    </select>
+    <button id="addLoan">Registrar Préstamo</button>
+  </div>
+
+<!-- Aquí agregamos el campo para ingresar el código de seguridad -->
+<div class="security-container">
+  <label for="securityCode">Código de Seguridad:</label>
+  <input type="password" id="securityCode" placeholder="Ingrese el código para generar devoluciones">
+</div>
+
+<div class="search-container">
+  <label for="search">Buscar:</label>
+  <input type="text" id="search" placeholder="Buscar por usuario o computador">
+</div>
+
+<div class="history-container">
+  <h2>Historial de Préstamos</h2>
+  <table id="loanTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Computador</th>
+        <th>Usuario</th>
+        <th>Fecha</th>
+        <th>Estado</th>
+        <th>Computador Perteneciente</th> 
+        <th>Eje Gestor del Préstamo</th> 
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Filas dinámicas -->
+    </tbody>
+  </table>
+</div>
+
+<div id="error-message">Error: No se encontraron datos.</div>
+
+<script src="script.js"></script>
+</body>
+</html>

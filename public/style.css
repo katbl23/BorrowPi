@@ -1,0 +1,199 @@
+/* Contenedor principal del formulario */
+.form-container {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Alinear etiquetas e inputs */
+.form-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-container select,
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-container select:focus,
+.form-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botón de registrar */
+.form-container button {
+  grid-column: span 2; /* El botón ocupa todo el ancho */
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Contenedor de código de seguridad */
+.security-container {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 800px;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.security-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.security-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .form-container {
+    grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
+  }
+
+  .form-container button {
+    grid-column: span 1;
+  }
+}
+/* Contenedor del historial de préstamos */
+.history-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  overflow-x: auto; /* Scroll horizontal si es necesario */
+}
+
+/* Tabla */
+.history-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.history-container th,
+.history-container td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.history-container th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+.history-container td {
+  color: #555;
+}
+
+/* Alternar colores de filas */
+.history-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.history-container tr:hover {
+  background-color: #e6f7ff;
+  cursor: pointer;
+}
+
+/* Mensaje de error */
+#error-message {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+  display: none;
+}
+
+/* Input y etiquetas */
+.security-container,
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.security-container label,
+.search-container label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.security-container input,
+.search-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .security-container,
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .security-container input,
+  .search-container input {
+    margin-top: 10px;
+  }
+
+  .history-container table,
+  .history-container th,
+  .history-container td {
+    display: block;
+    width: 100%;
+  }
+
+  .history-container tr {
+    margin-bottom: 10px;
+  }
+}
