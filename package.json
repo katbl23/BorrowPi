@@ -1,27 +1,22 @@
 {
-  "name": "computadores",
+  "name": "computadores---copia",
   "version": "1.0.0",
   "description": "",
-  "main": "node src/server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/server.js",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katbl23/hcolegio.git"
+    "url": "git+https://github.com/katbl23/BorrowPi.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/katbl23/hcolegio/issues"
+    "url": "https://github.com/katbl23/BorrowPi/issues"
   },
-  "homepage": "https://github.com/katbl23/hcolegio#readme",
+  "homepage": "https://github.com/katbl23/BorrowPi#readme",
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
-    "express": "^4.21.1",
-    "pg": "^8.13.1"
+    "express": "^4.21.2"
   }
 }
